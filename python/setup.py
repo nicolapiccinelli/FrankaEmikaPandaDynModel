@@ -9,7 +9,8 @@ ext_modules = [
                        "../cpp/panda_dyn_model_example/src/GravityVector.cpp",
                        "../cpp/panda_dyn_model_example/src/MassMatrix.cpp"],
                       include_dirs=['/usr/include/eigen3',
-                                    '../cpp/panda_dyn_model_example/include']),
+                                    '../cpp/panda_dyn_model_example/include'],
+                      extra_compile_args=["-O3"]),                                    
 ]
 
 setup(
